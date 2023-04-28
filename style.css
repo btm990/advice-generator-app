@@ -1,0 +1,113 @@
+:root {
+    --clr-primary-100: hsl(193, 38%, 86%);
+    --clr-primary-400: hsl(150, 100%, 66%);
+
+    --clr-neutral-100: hsl(217, 19%, 38%);
+    --clr-neutral-400: hsl(217, 19%, 24%);
+    --clr-neutral-900: hsl(218, 23%, 16%);
+
+    --ff-primary: 'Manrope', sans-serif;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+  background-color: var(--clr-neutral-900);
+  padding: 1.125rem;
+  font-size: 1.375rem;
+  font-family: var(--ff-primary);
+  font-weight: 800;
+}
+
+.wrapper {
+  min-height: 100vh;
+}
+
+.container {
+  background-color: var(--clr-neutral-400);
+  color: var(--clr-primary-100);
+  margin: 6rem auto;
+  padding: 2.25rem 1.5rem;
+  text-align: center;
+  overflow: visible;
+  display: grid;
+  place-items: center;
+  position: relative;
+  border-radius: 3%;
+}
+
+.advice {
+  padding-bottom: 1.5rem;
+}
+
+.card-title {
+  color: var(--clr-primary-400);
+  padding-bottom: 1.25rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 400;
+}
+
+.dice-button-wrapper {
+  padding: 0;
+  margin-top: 1.75rem;
+}
+
+@media (min-width:30em) {
+  .wrapper {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-size: 1.625rem;
+  }
+
+  .container {
+    max-width: 32rem;
+    padding: 2.5rem 2.5rem;
+  }
+
+  .advice {
+    padding-bottom: 2.125rem;
+  }
+
+  .dice-button-wrapper {
+    margin-top: 2rem;
+  }
+}
+
+.dice-button {
+  background-color: var(--clr-primary-400);
+  width: 4rem;
+  aspect-ratio: 1;
+  border: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  bottom: 0%;
+  transform: translate(-50%, 50%);
+}
+
+footer {
+    font-size: 11px; text-align: center; color: var(--clr-neutral-100)
+}
+footer a {
+    color: hsl(228, 45%, 44%); 
+}
